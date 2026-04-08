@@ -214,7 +214,7 @@ if st.session_state.loaded and st.session_state.df is not None:
                         )
                         #преобразование дат в формат дд.mm.yy
                         if column_types.get(x_axis) == 'datetime':
-                            fig.update_layout(xaxis=dict(tickformat="%d %m %Y", nticks=15))
+                            fig.update_layout(xaxis=dict(tickformat="%d %b %Y", nticks=15))
 
                     st.plotly_chart(fig, width='content')
 
